@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Empire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            color: red; /* Set the color to red */
+            cursor: pointer; /* Add pointer cursor to indicate it's clickable */
+            margin-bottom: 10px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto; /* Center the image */
+            border-radius: 50%; /* Make the image circular */
+            max-width: 150px; /* Set maximum width for responsiveness */
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333; /* Set the color to a dark color */
+            text-align: center;
+        }
+
+        section {
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: red; /* Set the color to red */
+            cursor: pointer; /* Add pointer cursor to indicate it's clickable */
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 onclick="toggleSection('aboutSection')">Skill Empire</h1>
+        <img src="C:\Users\Hp\Downloads\channels4_profile.jpg" alt="Skill Empire Logo"> <!-- Use the actual file name of your image -->
+        <div class="logo">Bilal Fazili</div> <!-- Placeholder for Bilal Fazili sign -->
+    </header>
+
+    <section id="aboutSection">
+        <h2 onclick="toggleSection('aboutSectionContent')">About Us</h2>
+        <div id="aboutSectionContent">
+            <p>Welcome to Skill Empire! We are dedicated to providing top-notch skills and knowledge to empower individuals
+                and businesses. Our team of experts is committed to delivering high-quality training and development
+                programs to help you succeed in your personal and professional journey.</p>
+        </div>
+    </section>
+
+    <section id="contactSection">
+        <h2 onclick="toggleSection('contactSectionContent')">Contact Us</h2>
+        <div id="contactSectionContent">
+            <p>For any inquiries or assistance, please feel free to contact us at the following mobile numbers:</p>
+            <ul>
+                <li>Mobile: 7006797665</li>
+                <li>Mobile: 9419024591</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Skill Empire. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            section.classList.toggle("hidden");
+        }
+    </script>
+
+</body>
+
+</html>
